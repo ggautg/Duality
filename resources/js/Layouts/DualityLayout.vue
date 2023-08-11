@@ -21,7 +21,7 @@ const showingNavigationDropdown = ref(false);
     <Head :title="title" />
 
     <div class="min-h-screen bg-duality">
-      <nav class="bg-duality border-b ">
+      <nav class="bg-duality fixed w-full">
         <!--Primary Navigation Menu-->
         <div class="max-w pt-9 pb-3" id="logohead">
           <div class="flex justify-between h-16">
@@ -56,7 +56,7 @@ const showingNavigationDropdown = ref(false);
       </nav>
 
       <!--Page Content-->
-      <main>
+      <main >
         <slot />
       </main>
 
@@ -65,8 +65,7 @@ const showingNavigationDropdown = ref(false);
 </template>
 
 <style scoped>
-#logohead
-{
+#logohead {
   padding-left: 2.85rem;
 }
 </style>

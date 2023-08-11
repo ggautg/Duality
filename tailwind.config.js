@@ -15,10 +15,12 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['IBM Plex Sans'],
+                roboto: ['Roboto'],
             },
             colors: {
                 'duality': '#101010',
+                'duality-secondary': '#CECECE',
               },
         },
     },

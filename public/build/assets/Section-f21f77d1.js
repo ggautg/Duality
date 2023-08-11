@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper-c27b6911.js";import{o as r,e as c,a as e,r as s}from"./app-1b7dcbb5.js";const n={name:"Section"},a={class:"grid grid-cols-2"};function l(o,i,d,p,_,f){return r(),c("div",a,[e("div",null,[s(o.$slots,"col1")]),e("div",null,[s(o.$slots,"col2")])])}const $=t(n,[["render",l]]);export{$ as default};
