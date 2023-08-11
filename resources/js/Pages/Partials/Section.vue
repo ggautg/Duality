@@ -10,7 +10,7 @@ export default {
 
 <template>
 	<!--A grid with 2 big cols-->
-	<div class="grid grid-cols-2 h-4/5">
+	<div class="grid grid-cols-2">
 		<!--A big col-->
 		<div>
 			<slot name="col1" />
