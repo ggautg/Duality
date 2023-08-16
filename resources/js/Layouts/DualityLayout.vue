@@ -42,7 +42,7 @@ function handleScroll() {
     <div class="min-h-screen bg-duality">
       <nav class="fixed w-full z-10" :class="{ 'bg-duality': !isAtTop, 'bg-none': isAtTop }">
         <!--Primary Navigation Menu-->
-        <div class="max-w pt-9 pb-3" id="logohead">
+        <div class="max-w mt-9 mb-4" id="logohead">
           <div class="flex justify-between h-16">
             <div class="flex">
               <!-- Logo-->
@@ -53,22 +53,24 @@ function handleScroll() {
               </div>
             </div>
 
-            <div class="grid grid-cols-4 pr-14 gap-10">
-              <button class="text-white focus:outline-none">
-                <i class="fas fa-desktop text-xl"></i>
-              </button>
+            <div>
+              <div class="grid grid-cols-4 pr-14 mt-1 gap-10">
+                <button class="text-white focus:outline-none">
+                  <i class="fas fa-desktop text-xl"></i>
+                </button>
 
-              <button class="text-white focus:outline-none">
-                <i class="fas fa-search text-xl"></i>
-              </button>
+                <button class="text-white focus:outline-none">
+                  <i class="fas fa-search text-xl"></i>
+                </button>
 
-              <button class="text-white focus:outline-none">
-                <i class="fas fa-shopping-bag text-xl"></i>
-              </button>
+                <button class="text-white focus:outline-none">
+                  <i class="fas fa-shopping-bag text-xl"></i>
+                </button>
 
-              <button class="text-white focus:outline-none">
-                <i class="fas fa-bars text-xl"></i>
-              </button>
+                <button class="text-white focus:outline-none">
+                  <i class="fas fa-bars text-xl"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>

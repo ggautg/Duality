@@ -19,7 +19,7 @@ defineProps({
 
 <template>
   <DualityLayout title="Duality">
-    <div class="grid grid-rows-2 bg-duality" id="grids">
+    <div class="grid grid-rows-3 bg-duality" id="grids">
       <!--Section 1-->
       <div>
         <Section>
@@ -51,11 +51,11 @@ defineProps({
             </div>
           </template>
         </section>
-        <!--End Section 1-->
       </div>
+      <!--End Section 1-->
 
-      <div class="bg-black">
-        <!--Section 2-->
+      <!--Section 2-->
+      <div>
         <Section>
           <template #col1>
             <div class="parent">
@@ -101,8 +101,42 @@ defineProps({
             </div>
           </template>
         </Section>
-        <!--End Section 2-->
       </div>
+      <!--End Section 2-->
+
+      <!--Section 3-->
+      <div class="bg-white">
+        <Section>
+          <template #col1>
+            <div class="h-screen overflow-hidden">
+              <video src="@/assets/videos/humoblanco.mp4" autoplay loop muted class="w-full"></video>
+            </div>
+          </template>
+
+          <template #col2>
+            <div class="mt-36 ml-20">
+              <h1 class="text-duality text-5xl font-roboto font-medium leading-tight mr-72">
+                "Las mentes
+                tienen dualidad,
+                pero el alma un
+                solo camino"
+              </h1>
+
+              <p class=" text-duality font-sans font-normal mt-12 mr-48">
+                Las preguntas que se encuentran en las cartas tienen un orden secuencial de distintos grados de intensidad
+                para conocerse mejor, empatizar con sus emociones, o para generar nuevos sentimientos...
+              </p>
+
+              <div class="mt-20 flex justify-start mr-28">
+                <p class="text-duality font-sans font-medium">
+                  <a href="#">Descubre más sobre las 36 preguntas</a>
+                </p>
+              </div>
+            </div>
+          </template>
+        </Section>
+      </div>
+      <!--End Section 3-->
     </div>
   </DualityLayout>
 </template>
