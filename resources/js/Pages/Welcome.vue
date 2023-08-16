@@ -20,17 +20,16 @@ defineProps({
 <template>
   <DualityLayout title="Duality">
     <div class="grid grid-rows-2 bg-duality" id="grids">
+      <!--Section 1-->
       <div>
         <Section>
           <template #col1>
-            <div class="py-36">
-              <h1 class="text-white text-7xl font-roboto font-medium leading-tight px-20">
-                <h1 class="vlt-heading">
-                  "El juego de los vínculos"
-                </h1>
+            <div class="mt-36">
+              <h1 class="text-white text-7xl font-roboto font-medium leading-tight mx-20">
+                "El juego de los vínculos"
               </h1>
 
-              <p class="text-duality-secondary font-sans pt-7 font-normal text-lg pl-24 lg:pr-72 ">
+              <p class="text-duality-secondary font-sans mt-7 font-normal text-lg ml-24 lg:mr-72 ">
                 Duality, es un juego de cartas diseñado para
                 vivir lo experimentado por el psicólogo
                 Arthur Aron en 1997 en el cual elaboró 36
@@ -38,54 +37,100 @@ defineProps({
                 vínculos entre personas, al punto de quedar enamoradas.
               </p>
 
-              <div class="pt-9 flex justify-end pr-28">
+              <div class="mt-9 flex justify-end mr-28">
                 <p class="text-white font-sans font-medium">
-                  <a href="">Conocé más sobre Duality</a>
+                  <a href="#">Conocé más sobre Duality</a>
                 </p>
               </div>
             </div>
           </template>
 
           <template #col2>
-            <div class="bg-red-300 h-screen overflow-hidden">
+            <div class="h-screen overflow-hidden">
               <video src="@/assets/videos/duality.mp4" autoplay loop muted class="w-full"></video>
             </div>
           </template>
         </section>
+        <!--End Section 1-->
       </div>
 
       <div class="bg-black">
+        <!--Section 2-->
         <Section>
           <template #col1>
-            <div class="absolute h-screen overflow-hidden" id="fontoimprovisado">
-              <img src="@/assets/images/sinfondo.webp" alt="sinfondo" class="h-screen">
-            </div>
-            
-            <div class="relative w-full flex justify-end pr-32 pt-32">
-                <div class=" bg-white w-fit p-3 rounded-full flex">
-                  <p>
-                    <a href="" class="font-sans text-sm">
-                      <i class="fa fa-eye" aria-hidden="true"></i>
-                      Descubre Duality
-                    </a>
+            <div class="parent">
+
+              <img class="mancha w-fit" src="@/assets/images/mancha1.png" alt="mancha">
+
+              <a href="#" class="boton w-full flex justify-end mt-36 mr-12">
+                <div class="bg-white w-fit py-4 px-7 rounded-full">
+                  <p class="font-sans text-sm font-medium">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    Descubre Duality
                   </p>
                 </div>
-              </div>
+              </a>
+
+              <img class="sinfondo w-9/12" src="@/assets/images/sinfondo.webp" alt="sinfondo">
+
+            </div>
           </template>
 
           <template #col2>
-            <div class="h-screen bg-green-300">
+            <h1 class="text-white text-5xl font-roboto font-medium leading-tight mx-12 mt-52 mb-3">
+              Pureza y neutralidad
+            </h1>
 
+            <p class="text-duality-secondary font-sans font-normal ml-12 lg:mr-72">
+              Descubre
+              Duality
+              Pureza y neutralidad
+              Duality te ofrece un mazo de cartas con un diseño puro y neutro pensado en el mensaje que posee cada una de
+              las preguntas del experimento, lo que le permitirá tener conversaciones profundas con su compañero o
+              invitado de juego respetando la manera autentica de realizar el experimento.
+            </p>
+
+            <div class="mt-8 ml-12">
+              <a href="#">
+                <div class="bg-white w-fit py-3 px-7 rounded-full">
+                  <p class="font-sans  font-normal">
+                    Consigue el tuyo aquí
+                  </p>
+                </div>
+              </a>
             </div>
           </template>
         </Section>
+        <!--End Section 2-->
       </div>
     </div>
   </DualityLayout>
 </template>
 
 <style scoped>
-#fontoimprovisado{
-  background-image: url("@/assets/images/mancha1.png");
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.mancha {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.sinfondo {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+.boton {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 </style>
