@@ -144,7 +144,16 @@ defineProps({
 
 
       <div class="bg-white">
+        <Section>
+          <template #col1>
+            <div class="h-screen overflow-hidden">
+              <video src="@/assets/videos/gente.mp4" autoplay loop muted class="w-full"></video>
+            </div>
+          </template>
 
+          <template #col2>
+          </template>
+        </Section>
       </div>
     </div>
   </DualityLayout>
