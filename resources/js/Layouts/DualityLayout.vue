@@ -29,9 +29,6 @@ function handleScroll() {
   }
 }
 
-
-
-
 </script>
 
 <template>

@@ -1,12 +1,15 @@
 <script>
 export default {
-  name: 'duality-home',
+  name: 'home',
 }
 </script>
 
 <script setup>
 import DualityLayout from '@/Layouts/DualityLayout.vue';
 import Section from './Partials/Section.vue';
+import DuaLityInput from '@/Components/DualityInput.vue';
+import DualityTextArea from '@/Components/DualityTextArea.vue';
+import { useForm } from '@inertiajs/vue3';
 
 
 defineProps({
@@ -15,6 +18,15 @@ defineProps({
   laravelVersion: String,
   phpVersion: String,
 });
+
+const form = useForm({
+  name: '',
+  email: '',
+  message: '',
+});
+
+
+
 </script>
 
 <template>
@@ -152,49 +164,37 @@ defineProps({
           </template>
 
           <template #col2>
-            <a href="#" class="text-duality text-5xl font-roboto font-medium leading-tight">
-              Contáctanos
-            </a>
+            <div class="mt-32 ml-28 mr-48 sm:ml-16 sm:mt-16">
+              <a href="#" class="text-duality text-5xl font-roboto font-medium leading-tight">
+                Contáctanos
+              </a>
 
-            <p class="text-duality font-sans font-normal mt-8">
-              Vendemos y hacemos cobertura de distribución y envió de pedidos online en Asunción y todo el Paraguay . Para
-              compra o distribución de productos a su tienda no dude en dejarnos su mensaje.
-            </p>
+              <p class="text-duality font-sans font-normal mt-8">
+                Vendemos y hacemos cobertura de distribución y envió de pedidos online en Asunción y todo el Paraguay .
+                Para
+                compra o distribución de productos a su tienda no dude en dejarnos su mensaje.
+              </p>
 
-            <form action="">
-              <div class="mt-8">
-                <label class="block">
-                  <span class="text-duality font-sans font-medium">
-                    Nombre
-                  </span>
-                </label>
-                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
-              </div>
+              <form action="">
+                <div class="mt-8">
+                  <DuaLityInput label="Nombre" v-model="form.name" />
+                </div>
 
-              <div class="mt-8">
-                <label class="block">
-                  <span class="text-duality font-sans font-medium">
-                    Correo
-                  </span>
-                </label>
-                <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
-              </div>
+                <div class="mt-8">
+                  <DuaLityInput label="Email" v-model="form.email" />
+                </div>
 
-              <div class="mt-8">
-                <label class="block">
-                  <span class="text-duality font-sans font-medium">
-                    Mensaje
-                  </span>
-                </label>
-                <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
-              </div>
+                <div class="mt-8">
+                  <DualityTextArea label="Mensaje(Opcional)" v-model="form.message" />
+                </div>
 
-              <div class="mt-8">
-                <button type="submit" class="bg-duality text-white font-sans font-medium py-3 px-7">
-                  Enviar
-                </button>
-              </div>
-            </form>
+                <div class="mt-8">
+                  <button type="submit" class="bg-duality text-white font-sans font-medium py-6 px-14">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
           </template>
         </Section>
       </div>
