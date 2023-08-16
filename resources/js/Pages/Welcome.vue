@@ -152,6 +152,49 @@ defineProps({
           </template>
 
           <template #col2>
+            <a href="#" class="text-duality text-5xl font-roboto font-medium leading-tight">
+              Contáctanos
+            </a>
+
+            <p class="text-duality font-sans font-normal mt-8">
+              Vendemos y hacemos cobertura de distribución y envió de pedidos online en Asunción y todo el Paraguay . Para
+              compra o distribución de productos a su tienda no dude en dejarnos su mensaje.
+            </p>
+
+            <form action="">
+              <div class="mt-8">
+                <label class="block">
+                  <span class="text-duality font-sans font-medium">
+                    Nombre
+                  </span>
+                </label>
+                <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+              </div>
+
+              <div class="mt-8">
+                <label class="block">
+                  <span class="text-duality font-sans font-medium">
+                    Correo
+                  </span>
+                </label>
+                <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+              </div>
+
+              <div class="mt-8">
+                <label class="block">
+                  <span class="text-duality font-sans font-medium">
+                    Mensaje
+                  </span>
+                </label>
+                <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
+              </div>
+
+              <div class="mt-8">
+                <button type="submit" class="bg-duality text-white font-sans font-medium py-3 px-7">
+                  Enviar
+                </button>
+              </div>
+            </form>
           </template>
         </Section>
       </div>
