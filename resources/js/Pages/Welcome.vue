@@ -31,7 +31,7 @@ const form = useForm({
 
 <template>
   <DualityLayout title="Duality">
-    <div class="grid grid-rows-5 bg-duality" id="grids">
+    <div class="grid grid-rows-5 bg-duality w-full" id="grids">
       <!--Section 1-->
       <div>
         <Section>
