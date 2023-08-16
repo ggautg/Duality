@@ -19,7 +19,7 @@ defineProps({
 
 <template>
   <DualityLayout title="Duality">
-    <div class="grid grid-rows-3 bg-duality" id="grids">
+    <div class="grid grid-rows-5 bg-duality" id="grids">
       <!--Section 1-->
       <div>
         <Section>
@@ -137,6 +137,15 @@ defineProps({
         </Section>
       </div>
       <!--End Section 3-->
+
+      <div>
+
+      </div>
+
+
+      <div class="bg-white">
+
+      </div>
     </div>
   </DualityLayout>
 </template>
