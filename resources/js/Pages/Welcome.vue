@@ -9,6 +9,7 @@ import DualityLayout from '@/Layouts/DualityLayout.vue';
 import Section from './Partials/Section.vue';
 import DuaLityInput from '@/Components/DualityInput.vue';
 import DualityTextArea from '@/Components/DualityTextArea.vue';
+import PseudoProgressBar from '@/Components/PseudoProgressBar.vue';
 import { useForm } from '@inertiajs/vue3';
 
 
@@ -150,11 +151,33 @@ const form = useForm({
       </div>
       <!--End Section 3-->
 
+      <!--Section 4-->
       <div>
+        <Section>
+          <template #col1>
+            <div class="mt-36 ml-44 mr-60 mb-14">
+              <p class="text-white font-sans font-medium text-5xl leading-snug">Lo que sentirás con los demás al jugarlo
+              </p>
+            </div>
 
+            <div class="ml-44">
+              <PseudoProgressBar value="90" text="Conocimiento de tu pareja de juego"></PseudoProgressBar>
+              <PseudoProgressBar value="95" text="Expresión y confianza mutua"></PseudoProgressBar>
+              <PseudoProgressBar value="90" text="Sentimientos encontrados"></PseudoProgressBar>
+              <PseudoProgressBar value="75" text="Relacionamiento a futuro"></PseudoProgressBar>
+            </div>
+          </template>
+
+          <template #col2>
+            <div>
+
+            </div>
+          </template>
+        </Section>
       </div>
+      <!--End Section 4-->
 
-
+      <!--Section 5-->
       <div class="bg-white">
         <Section>
           <template #col1>
@@ -198,6 +221,7 @@ const form = useForm({
           </template>
         </Section>
       </div>
+      <!--End Section 5-->
     </div>
   </DualityLayout>
 </template>

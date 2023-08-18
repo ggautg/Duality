@@ -21,6 +21,7 @@ export default {
             colors: {
                 'duality': '#101010',
                 'duality-secondary': '#CECECE',
+                'bar-bg': '#5c5c5c',
               },
         },
     },
